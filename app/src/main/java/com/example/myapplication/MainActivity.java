@@ -40,12 +40,13 @@ public class MainActivity extends AppCompatActivity {
         final char[] op = new char[1];
 
         final TextView Tv = findViewById(R.id.tv1);
+        final TextView Tv2 = findViewById(R.id.tv2);
 
 
         clr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Tv2.setText("");
                 Tv.setText("");
 
             }
@@ -126,10 +127,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                // Tv.append(bplus.getText());
                 exp1[0] = Float.parseFloat(Tv.getText().toString());
-
+                Tv2.setText(Tv.getText());
                 Tv.setText("");
                 op[0] = '+';
-
+                Tv2.append("+");
             }
         });
         bminus.setOnClickListener(new View.OnClickListener() {
@@ -137,9 +138,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                // Tv.append(bminus.getText());
                 exp1[0] = Float.parseFloat(Tv.getText().toString());
-
+                Tv2.setText(Tv.getText());
                 Tv.setText("");
                 op[0] = '-';
+                Tv2.append("-");
             }
         });
         bmul.setOnClickListener(new View.OnClickListener() {
@@ -147,9 +149,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                // Tv.append(bmul.getText());
                 exp1[0] = Float.parseFloat(Tv.getText().toString());
-
+                Tv2.setText(Tv.getText());
                 Tv.setText("");
                 op[0] = '*';
+                Tv2.append("*");
 
             }
         });
@@ -158,9 +161,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                // Tv.append(bdiv.getText());
                 exp1[0] = Float.parseFloat(Tv.getText().toString());
-
+                Tv2.setText(Tv.getText());
                 Tv.setText("");
                 op[0] = '/';
+                Tv2.append("/");
             }
         });
         bpoint.setOnClickListener(new View.OnClickListener() {
@@ -175,6 +179,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Toast.makeText(MainActivity.this, String. exp1[0], Toast.LENGTH_SHORT).show();
                 exp2[0] = Float.parseFloat(Tv.getText().toString());
+                Tv2.append(Tv.getText());
+
                 Tv.setText("");
 
               float answer = 0;

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#4E504E">
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,57 +25,76 @@
         android:id="@+id/tv1"
         android:layout_above="@+id/RL1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+
     <RelativeLayout
         android:id="@+id/RL1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:background="#FFE325">
 
    <Button
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/b1"
-       android:text="1"/>
+       android:text="1"
+       android:background="#0E0D0D"
+       android:textColor="#fff"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b2"
         android:text="2"
-        android:layout_toRightOf="@+id/b1"/>
+        android:layout_toRightOf="@+id/b1"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b3"
         android:text="3"
-        android:layout_toRightOf="@+id/b2"/>
+        android:layout_toRightOf="@+id/b2"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b4"
         android:text="4"
-        android:layout_below="@+id/b1" />
+        android:layout_below="@+id/b1"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b5"
         android:text="5"
         android:layout_below="@id/b2"
-        android:layout_toRightOf="@id/b4"/>
+        android:layout_toRightOf="@id/b4"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b6"
         android:text="6"
         android:layout_below="@id/b3"
-        android:layout_toRightOf="@id/b5"/>
+        android:layout_toRightOf="@id/b5"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b7"
         android:text="7"
-        android:layout_below="@id/b4" />
+        android:layout_below="@id/b4"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -82,21 +102,27 @@
         android:id="@+id/b8"
         android:text="8"
         android:layout_below="@id/b5"
-        android:layout_toRightOf="@id/b7"/>
+        android:layout_toRightOf="@id/b7"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b9"
         android:text="9"
         android:layout_below="@id/b6"
-        android:layout_toRightOf="@id/b8"/>
+        android:layout_toRightOf="@id/b8"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b0"
         android:text="0"
         android:layout_below="@id/b8"
-        android:layout_toRightOf="@id/b7"/>
+        android:layout_toRightOf="@id/b7"
+        android:background="#0E0D0D"
+        android:textColor="#fff"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -104,13 +130,17 @@
             android:id="@+id/bequal"
             android:text="="
             android:layout_toRightOf="@+id/b0"
-            android:layout_below="@id/b9"/>
+            android:layout_below="@id/b9"
+            android:background="#0E0D0D"
+            android:textColor="#fff"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bpoint"
             android:text="."
-            android:layout_below="@id/b7"/>
+            android:layout_below="@id/b7"
+            android:background="#0E0D0D"
+            android:textColor="#fff"/>
 
 
     </RelativeLayout>
@@ -125,25 +155,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bplus"
-            android:text="+" />
+            android:text="+"
+            android:background="#F44336"
+            android:textColor="#000"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bminus"
             android:text="-"
-            android:layout_toRightOf="@id/bplus"/>
+            android:layout_toRightOf="@id/bplus"
+            android:background="#F44336"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bmul"
             android:text="*"
-            android:layout_toRightOf="@id/bminus" />
+            android:layout_toRightOf="@id/bminus"
+            android:background="#F44336"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bdiv"
             android:text="/"
-            android:layout_toRightOf="@+id/bmul"/>
+            android:layout_toRightOf="@+id/bmul"
+            android:background="#F44336"/>
 
     </RelativeLayout>
     <Button
@@ -153,6 +188,18 @@
         android:text="CLR"
         android:layout_below="@+id/RL2"
         android:layout_centerInParent="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/clr"
+        android:layout_marginTop="50px"
+        android:textColor="#fff"
+        android:textSize="50px"
+
+        android:textAlignment="center"
+        android:hint="EXPRESSION"
         />
 
 
