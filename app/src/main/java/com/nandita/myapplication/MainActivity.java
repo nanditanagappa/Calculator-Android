@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.nandita.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
